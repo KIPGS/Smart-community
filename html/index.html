@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html>
+	<div class="mask">
+		<div class="message">
+			<span class="information"></span>
+		</div>
+	</div>
+	<head>
+		<meta charset="UTF-8">
+		<title>中益养老</title>
+		<link rel="stylesheet" type="text/css" href="../content/less.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/mqttws31.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="../js/drag.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="../js/all.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div>
+			<div class="title">
+				<img src="../img/fanhui.png" alt="" />
+				<span>智慧社区</span>
+			</div>
+			<div class="zhuti cl">
+				<!--地图-->
+				<div class="ditu cl">
+					<div class="left">
+						<div class="ditu_">
+							<div class="area">
+								<img src="../img/ditu.png" alt="" />
+								<div class="l_h jinru"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--全部房间-->
+				<div class="quanbu cl">
+					<div class="left">
+						<div class="weizhi">
+							<div class="weizhi_name">中益养老社区</div>
+							<select name="" id="">
+								<option value="">丰台区</option>
+								<option value="">丰台区</option>
+								<option value="">丰台区</option>
+								<option value="">丰台区</option>
+								<option value="">丰台区</option>
+							</select>
+							<select name="" id="">
+								<option value="">朝阳龙座</option>
+								<option value="">朝阳龙座</option>
+								<option value="">朝阳龙座</option>
+								<option value="">朝阳龙座</option>
+								<option value="">朝阳龙座</option>
+							</select>
+							<img src="../img/sousuo.png" alt="" />
+						</div>
+						<div class="louhao">
+							<!--<div class="area">
+								<img src="../img/zhongyi.jpg" alt="" />
+								<div class="l_h guibinlou1">贵宾楼1</div>
+							</div>-->
+						</div>
+					</div>
+				</div>
+				<!--某楼房间-->
+				<div class="moulou cl">
+					<div class="left">
+						<div class="weizhi">
+							<div class="weizhi_name guibinlou1_1">贵宾楼</div>
+							<input class="sousuoinput" type="text" placeholder="可根据卡号、手机号、用户ID搜索"/>
+							<img src="../img/sousuo.png" alt="" />
+						</div>
+						<!--<div class="weizhi">
+							<div class="weizhi_name guibinlou1_1">一层</div>
+						</div>
+						<div class="menhao">
+							<div class="div2">
+								<div class="div2_"></div>
+								<span>101</span>
+							</div>
+							<div class="div2">
+								<div class="div2_"></div>
+								<span>102</span>
+							</div>
+						</div>-->
+					</div>
+				</div>
+				<!--主页-->
+				<div class="zhuye cl">
+					<div class="left cl">
+						<div class="div1 kongtiao">
+							<div class="more">
+								<img src="../img/more.png" />
+							</div>
+							<div class="biaozhi"/></div>
+							<div class="name">空调</div>
+							<span class="condition">关</span>
+						</div>
+						<div class="div1 saodijiqiren">
+							<div class="more">
+								<img src="../img/more.png" />
+							</div>
+							<div class="biaozhi"/></div>
+							<div class="name">扫地机器人</div>
+							<span class="condition">关</span>
+
+						</div>
+						<div class="div1 dianshiji">
+							<div class="more">
+								<img src="../img/more.png" />
+							</div>
+							<div class="biaozhi"/></div>
+							<div class="name">电视机</div>
+							<span class="condition">关</span>
+
+						</div>
+						<div class="div1 datingdeng">
+							<div class="more">
+								<img src="../img/more.png" />
+							</div>
+							<div class="biaozhi"/></div>
+							<div class="name">客厅灯</div>
+							<span class="condition">关</span>
+
+						</div>
+						<div class="div1 woshideng">
+							<div class="more">
+								<img src="../img/more.png" />
+							</div>
+							<div class="biaozhi"/></div>
+							<div class="name">卧室灯</div>
+							<span class="condition">关</span>
+
+						</div>
+						<div class="div1 chufangdeng">
+							<div class="more">
+								<img src="../img/more.png" />
+							</div>
+							<div class="biaozhi"/></div>
+							<div class="name">厨房灯</div>
+							<span class="condition">关</span>
+
+						</div>
+						<div class="div1 deng4">
+							<div class="more">
+								<img src="../img/more.png" />
+							</div>
+							<div class="biaozhi"/></div>
+							<div class="name">灯4</div>
+							<span class="condition">关</span>
+
+						</div>
+						<div class="div1 deng5">
+							<div class="more">
+								<img src="../img/more.png" />
+							</div>
+							<div class="biaozhi"/></div>
+							<div class="name">灯5</div>
+							<span class="condition">关</span>
+
+						</div>
+						<div class="div1 deng6">
+							<div class="more">
+								<img src="../img/more.png" />
+							</div>
+							<div class="biaozhi"/></div>
+							<div class="name">灯6</div>
+							<span class="condition">关</span>
+
+						</div>
+						<div class="div1 mensuo">
+							<div class="more">
+								<img src="../img/more.png" />
+							</div>
+							<div class="biaozhi"/></div>
+							<div class="name">门锁</div>
+							<span class="condition">关</span>
+
+						</div>
+						<div class="div1 xinfengxitong">
+							<div class="more">
+								<img src="../img/more.png" />
+							</div>
+							<div class="biaozhi"/></div>
+							<div class="name">新风系统</div>
+							<span class="condition">关</span>
+
+						</div>
+						<div class="div1 kongqijinghuaqi">
+							<div class="more">
+								<img src="../img/more.png" />
+							</div>
+							<div class="biaozhi"/></div>
+							<div class="name">空气净化器</div>
+							<span class="condition">关</span>
+
+						</div>
+						<div class="div1 yushilian">
+							<div class="more">
+								<img src="../img/more.png" />
+							</div>
+							<div class="biaozhi"/></div>
+							<div class="name">浴室帘</div>
+							<span class="condition">关</span>
+
+						</div>
+						<div class="div1 dengdai">
+							<div class="more">
+								<img src="../img/more.png" />
+							</div>
+							<div class="biaozhi"/></div>
+							<div class="name">灯带</div>
+							<span class="condition">关</span>
+
+						</div>
+						<div class="div1 meiqifa">
+							<div class="more">
+								<img src="../img/more.png" />
+							</div>
+							<div class="biaozhi"/></div>
+							<div class="name">煤气阀</div>
+							<span class="condition">关</span>
+
+						</div>
+					</div>
+					<div class="right">
+						<div class="shinei">
+							<div class="shijian">2017/06/23 09:42 星期三</div>
+							<div class="shinei1">
+								<div class="more">
+									<img src="../img/more.png" />
+								</div>
+								<span class="sn">室内</span>
+								<div class="snwd"><span class="snwd_">24.8</span><span>&#8451;</span></div>
+								<div class="shineitu">
+									<div class="shineitu_zhu">
+										<div class="baifenbi light">
+											<div class="baifenbi_"></div>
+										</div>
+										<div class="baifenbi co2">
+											<div class="baifenbi_"></div>
+										</div>
+										<div class="baifenbi pm25">
+											<div class="baifenbi_"></div>
+										</div>
+										<div class="baifenbi noise">
+											<div class="baifenbi_"></div>
+										</div>
+										<div class="baifenbi mr0 shidu">
+											<div class="baifenbi_"></div>
+										</div>
+									</div>
+									<div class="shineitu_ming">
+										<div class="baifenbi light">光强
+											<span>2134</span>
+										</div>
+										<div class="baifenbi co2">CO2
+											<span>123</span>
+										</div>
+										<div class="baifenbi pm25">PM2.5
+											<span>123</span>
+										</div>
+										<div class="baifenbi noise">分贝
+											<span>123</span>
+										</div>
+										<div class="baifenbi mr0 shidu">湿度
+											<span>123</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="shiwai">
+							<div class="shiwai1">
+								<div class="more">
+									<img src="../img/more.png" />
+								</div>
+								<span class="sw">室外</span>
+								<div class="swwd"><span>30.8</span><span>&#8451;</span></div>
+								<div class="swtq">
+									<img src="../img/tqqing.png" alt="" />
+								</div>
+								<div class="shiwaitu">
+									<div class="shiwaitu_zhu">
+										<div class="baifenbi pm25">
+											<div class="baifenbi_"></div>
+										</div>
+										<div class="baifenbi pm10">
+											<div class="baifenbi_"></div>
+										</div>
+										<div class="baifenbi so2">
+											<div class="baifenbi_"></div>
+										</div>
+										<div class="baifenbi no2">
+											<div class="baifenbi_"></div>
+										</div>
+										<div class="baifenbi o3">
+											<div class="baifenbi_"></div>
+										</div>
+										<div class="baifenbi mr0 co">
+											<div class="baifenbi_"></div>
+										</div>
+									</div>
+									<div class="shiwaitu_ming">
+										<div class="baifenbi pm25">PM2.5
+											<span>123</span>
+										</div>
+										<div class="baifenbi pm10">PM10
+											<span>123</span>
+										</div>
+										<div class="baifenbi so2">SO2
+											<span>123</span>
+										</div>
+										<div class="baifenbi no2">NO2
+											<span>123</span>
+										</div>
+										<div class="baifenbi o3">O3
+											<span>123</span>
+										</div>
+										<div class="baifenbi mr0 co">CO
+											<span>123</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--电视机-->
+				<div class="dianshiji">
+					<div class="left">
+						<div class="jilu">
+							<div class="jl">事件记录</div>
+							<div class="tb">
+								<table border="1" cellspacing="0" cellpadding="0">
+									<tr>
+										<td colspan="4">
+											<div>
+												<span class="syr"><img src="../img/syr.png" alt="" />上一日</span>
+												<span class="r">8月27日</span>
+												<span class="xyr">下一日<img src="../img/xyr.png" alt="" /></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>15:46:56</td>
+										<td>开启</td>
+										<td>15:46:56</td>
+										<td>关闭</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="kongzhi">
+							<div class="shijian">2017/06/23 09:42 星期三</div>
+							<div class="kongzhitou cl">
+								<span>电视机</span>
+								<img class="cur_p" src="../img/close.png" alt="" />
+							</div>
+							<div class="pindao">东方卫视</div>
+							<div class="kongzhipindao">
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td></td>
+										<td class="cur_p">上</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td class="cur_p">左</td>
+										<td class="cur_p">确定</td>
+										<td class="cur_p">右</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="cur_p">下</td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+							<div class="xuanzepindao">
+								<span>选择频道:</span>
+								<select name="" id="">
+									<option>CCTV1</option>
+									<option>CCTV2</option>
+									<option>CCTV3</option>
+									<option>CCTV4</option>
+								</select>
+							</div>
+							<div class="kongzhiyinliang">
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td class="cur_p">音量-</td>
+										<td class="cur_p">音量+</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--空气净化器-->
+				<div class="kongqijinghuaqi">
+					<div class="left">
+						<div class="jilu">
+							<div class="jl">事件记录</div>
+							<div class="tb">
+								<table border="1" cellspacing="0" cellpadding="0">
+									<tr>
+										<td colspan="4">
+											<div>
+												<span class="syr"><img src="../img/syr.png" alt="" />上一日</span>
+												<span class="r">8月27日</span>
+												<span class="xyr">下一日<img src="../img/xyr.png" alt="" /></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>15:46:56</td>
+										<td>开启</td>
+										<td>15:46:56</td>
+										<td>关闭</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="kongzhi">
+							<div class="shijian">2017/06/23 09:42 星期三</div>
+							<div class="kongzhitou cl">
+								<span>空气净化器</span>
+								<img class="cur_p" src="../img/close.png" alt="" />
+							</div>
+							<div class="kongzhi1">
+								<div class="snwd"><span>24.8</span><span>&#8451;</span></div>
+								<div class="shineitu">
+									<div class="shineitu_zhu">
+										<div class="baifenbi">
+											<div class="baifenbi_ o2"></div>
+										</div>
+										<div class="baifenbi">
+											<div class="baifenbi_ pm25"></div>
+										</div>
+										<div class="baifenbi">
+											<div class="baifenbi_ cov"></div>
+										</div>
+										<div class="baifenbi mr0">
+											<div class="baifenbi_ sd"></div>
+										</div>
+									</div>
+									<div class="shineitu_ming">
+										<div class="baifenbi o2">氧气
+											<span>123</span>
+										</div>
+										<div class="baifenbi pm25">PM2.5
+											<span>123</span>
+										</div>
+										<div class="baifenbi cov">COV
+											<span>123</span>
+										</div>
+										<div class="baifenbi sd mr0">湿度
+											<span>123</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="kongzhifangxiang">
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td></td>
+										<td class="cur_p shang"><img src="../img/anjian1.png" alt="" /></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td class="cur_p zuo"><img src="../img/anjian1.png" alt="" /></td>
+										<td class="cur_p"><img src="../img/zanting.png" alt="" /></td>
+										<td class="cur_p you"><img src="../img/anjian1.png" alt="" /></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="cur_p xia"><img src="../img/anjian1.png" alt="" /></td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+							<div class="kongzhifengli cl">
+								<div class="fenglixinxi">
+									<!--<span class="fengli">风力</span>-->
+									<span class="shuxing">
+										<span>电量剩余：<span>66</span>%</span>
+									<span></span>
+									<!--<span><img src="../img/chongdian1.png" alt="" /></span>-->
+									</span>
+								</div>
+								<div class="qiangdu">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td><img src="../img/jingyin.png" alt="" class="on" /></td>
+											<td><img src="../img/biaozhun.png" alt="" /></td>
+											<td><img src="../img/qiangli.png" alt="" /></td>
+											<td><img src="../img/zidong.png" alt="" /></td>
+										</tr>
+										<tr>
+											<td>静音</td>
+											<td>标准</td>
+											<td>强力</td>
+											<td>自动</td>
+										</tr>
+									</table>
+								</div>
+								<div class="jinghua">
+									<input type="button" value="开始净化" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--空调-->
+				<div class="kongtiao">
+					<div class="left">
+						<div class="jilu_">
+							<div class="jl">
+								事件记录
+								<div class="ri on">日</div>
+								<div class="zhou">周</div>
+								<div class="yue">月</div>
+							</div>
+							<div class="tu">
+								<div class="dianliangtu_zhu cl">
+									<div class="baifenbi">
+										<div class="baifenbi_">
+											<span>1</span>
+										</div>
+									</div>
+									<div class="baifenbi">
+										<div class="baifenbi_">
+											<span>1</span>
+										</div>
+									</div>
+									<div class="baifenbi">
+										<div class="baifenbi_">
+											<span>1</span>
+										</div>
+									</div>
+									<div class="baifenbi">
+										<div class="baifenbi_">
+											<span>1</span>
+										</div>
+									</div>
+									<div class="baifenbi">
+										<div class="baifenbi_">
+											<span>1</span>
+										</div>
+									</div>
+								</div>
+								<div class="dianliangtu_riqi">
+									<div class="baifenbi">
+										<span>8月27日</span>
+									</div>
+									<div class="baifenbi">
+										<span>8月27日</span>
+									</div>
+									<div class="baifenbi">
+										<span>8月27日</span>
+									</div>
+									<div class="baifenbi">
+										<span>8月27日</span>
+									</div>
+									<div class="baifenbi">
+										<span>8月27日</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="jilu">
+							<div class="jl">事件记录 <span class="sjjl"><img src="../img/jilu1.png" alt="" /></span></div>
+							<div class="tb">
+								<table border="1" cellspacing="0" cellpadding="0">
+									<tr>
+										<td colspan="4">
+											<div>
+												<span class="syr"><img src="../img/syr.png" alt="" />上一日</span>
+												<span class="r">8月27日</span>
+												<span class="xyr">下一日<img src="../img/xyr.png" alt="" /></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>15:46:56</td>
+										<td>开启</td>
+										<td>15:46:56</td>
+										<td>关闭</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="kongzhi">
+							<div class="shijian">2017/06/23 09:42 星期三</div>
+							<div class="kongzhitou cl">
+								<span>空调</span>
+								<img class="cur_p" src="../img/close.png" alt="" />
+							</div>
+							<div class="snwd"><span>24.8</span><span>&#8451;</span></div>
+							<div class="kongzhiwendu">
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td class="shang"><img src="../img/anjian1.png" alt="" /></td>
+									</tr>
+									<tr>
+										<td class="xia"><img src="../img/anjian1.png" alt="" /></td>
+									</tr>
+								</table>
+							</div>
+							<div class="shishigonglv">
+								<span>实时功率：<span class="gonglv">15</span><span>kw/h</span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--门锁-->
+				<div class="mensuo">
+					<div class="left">
+						<div class="jilu">
+							<div class="jl">事件记录</div>
+							<div class="tb">
+								<table border="1" cellspacing="0" cellpadding="0">
+									<tr>
+										<td colspan="4">
+											<div>
+												<span class="syr"><img src="../img/syr.png" alt="" />上一日</span>
+												<span class="r">8月27日</span>
+												<span class="xyr">下一日<img src="../img/xyr.png" alt="" /></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>15:46:56</td>
+										<td>开启</td>
+										<td>15:46:56</td>
+										<td>关闭</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="kongzhi">
+							<div class="shijian">2017/06/23 09:42 星期三</div>
+							<div class="kongzhitou cl">
+								<span>门锁</span>
+								<img class="cur_p" src="../img/close.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--客厅灯-->
+				<div class="datingdeng">
+					<div class="left">
+						<div class="jilu">
+							<div class="jl">事件记录</div>
+							<div class="tb">
+								<table border="1" cellspacing="0" cellpadding="0">
+									<tr>
+										<td colspan="4">
+											<div>
+												<span class="syr"><img src="../img/syr.png" alt="" />上一日</span>
+												<span class="r">8月27日</span>
+												<span class="xyr">下一日<img src="../img/xyr.png" alt="" /></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>15:46:56</td>
+										<td>开启</td>
+										<td>15:46:56</td>
+										<td>关闭</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="kongzhi">
+							<div class="shijian">2017/06/23 09:42 星期三</div>
+							<div class="kongzhitou cl">
+								<span>客厅灯</span>
+								<img class="cur_p" src="../img/close.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--卧室灯-->
+				<div class="woshideng">
+					<div class="left">
+						<div class="jilu">
+							<div class="jl">事件记录</div>
+							<div class="tb">
+								<table border="1" cellspacing="0" cellpadding="0">
+									<tr>
+										<td colspan="4">
+											<div>
+												<span class="syr"><img src="../img/syr.png" alt="" />上一日</span>
+												<span class="r">8月27日</span>
+												<span class="xyr">下一日<img src="../img/xyr.png" alt="" /></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>15:46:56</td>
+										<td>开启</td>
+										<td>15:46:56</td>
+										<td>关闭</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="kongzhi">
+							<div class="shijian">2017/06/23 09:42 星期三</div>
+							<div class="kongzhitou cl">
+								<span>卧室灯</span>
+								<img class="cur_p" src="../img/close.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--厨房灯-->
+				<div class="chufangdeng">
+					<div class="left">
+						<div class="jilu">
+							<div class="jl">事件记录</div>
+							<div class="tb">
+								<table border="1" cellspacing="0" cellpadding="0">
+									<tr>
+										<td colspan="4">
+											<div>
+												<span class="syr"><img src="../img/syr.png" alt="" />上一日</span>
+												<span class="r">8月27日</span>
+												<span class="xyr">下一日<img src="../img/xyr.png" alt="" /></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>15:46:56</td>
+										<td>开启</td>
+										<td>15:46:56</td>
+										<td>关闭</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="kongzhi">
+							<div class="shijian">2017/06/23 09:42 星期三</div>
+							<div class="kongzhitou cl">
+								<span>厨房灯</span>
+								<img class="cur_p" src="../img/close.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--灯4-->
+				<div class="deng4">
+					<div class="left">
+						<div class="jilu">
+							<div class="jl">事件记录</div>
+							<div class="tb">
+								<table border="1" cellspacing="0" cellpadding="0">
+									<tr>
+										<td colspan="4">
+											<div>
+												<span class="syr"><img src="../img/syr.png" alt="" />上一日</span>
+												<span class="r">8月27日</span>
+												<span class="xyr">下一日<img src="../img/xyr.png" alt="" /></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>15:46:56</td>
+										<td>开启</td>
+										<td>15:46:56</td>
+										<td>关闭</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="kongzhi">
+							<div class="shijian">2017/06/23 09:42 星期三</div>
+							<div class="kongzhitou cl">
+								<span>灯4</span>
+								<img class="cur_p" src="../img/close.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--灯5-->
+				<div class="deng5">
+					<div class="left">
+						<div class="jilu">
+							<div class="jl">事件记录</div>
+							<div class="tb">
+								<table border="1" cellspacing="0" cellpadding="0">
+									<tr>
+										<td colspan="4">
+											<div>
+												<span class="syr"><img src="../img/syr.png" alt="" />上一日</span>
+												<span class="r">8月27日</span>
+												<span class="xyr">下一日<img src="../img/xyr.png" alt="" /></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>15:46:56</td>
+										<td>开启</td>
+										<td>15:46:56</td>
+										<td>关闭</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="kongzhi">
+							<div class="shijian">2017/06/23 09:42 星期三</div>
+							<div class="kongzhitou cl">
+								<span>灯5</span>
+								<img class="cur_p" src="../img/close.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--灯6-->
+				<div class="deng6">
+					<div class="left">
+						<div class="jilu">
+							<div class="jl">事件记录</div>
+							<div class="tb">
+								<table border="1" cellspacing="0" cellpadding="0">
+									<tr>
+										<td colspan="4">
+											<div>
+												<span class="syr"><img src="../img/syr.png" alt="" />上一日</span>
+												<span class="r">8月27日</span>
+												<span class="xyr">下一日<img src="../img/xyr.png" alt="" /></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>15:46:56</td>
+										<td>开启</td>
+										<td>15:46:56</td>
+										<td>关闭</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="kongzhi">
+							<div class="shijian">2017/06/23 09:42 星期三</div>
+							<div class="kongzhitou cl">
+								<span>灯6</span>
+								<img class="cur_p" src="../img/close.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--浴室帘-->
+				<div class="yushilian">
+					<div class="left">
+						<div class="jilu">
+							<div class="jl">事件记录</div>
+							<div class="tb">
+								<table border="1" cellspacing="0" cellpadding="0">
+									<tr>
+										<td colspan="4">
+											<div>
+												<span class="syr"><img src="../img/syr.png" alt="" />上一日</span>
+												<span class="r">8月27日</span>
+												<span class="xyr">下一日<img src="../img/xyr.png" alt="" /></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>15:46:56</td>
+										<td>开启</td>
+										<td>15:46:56</td>
+										<td>关闭</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="kongzhi">
+							<div class="shijian">2017/06/23 09:42 星期三</div>
+							<div class="kongzhitou cl">
+								<span>浴室帘</span>
+								<img class="cur_p" src="../img/close.png" alt="" />
+							</div>
+							<div class="jindutiao">
+								<div class="jindutiao_">
+									<div class="quan1">
+										<div class="quan2"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--灯带-->
+				<div class="dengdai">
+					<div class="left">
+						<div class="jilu">
+							<div class="jl">事件记录</div>
+							<div class="tb">
+								<table border="1" cellspacing="0" cellpadding="0">
+									<tr>
+										<td colspan="4">
+											<div>
+												<span class="syr"><img src="../img/syr.png" alt="" />上一日</span>
+												<span class="r">8月27日</span>
+												<span class="xyr">下一日<img src="../img/xyr.png" alt="" /></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>15:46:56</td>
+										<td>开启</td>
+										<td>15:46:56</td>
+										<td>关闭</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="kongzhi">
+							<div class="shijian">2017/06/23 09:42 星期三</div>
+							<div class="kongzhitou cl">
+								<span>灯带</span>
+								<img class="cur_p" src="../img/close.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--煤气阀-->
+				<div class="meiqifa">
+					<div class="left">
+						<div class="jilu">
+							<div class="jl">事件记录</div>
+							<div class="tb">
+								<table border="1" cellspacing="0" cellpadding="0">
+									<tr>
+										<td colspan="4">
+											<div>
+												<span class="syr"><img src="../img/syr.png" alt="" />上一日</span>
+												<span class="r">8月27日</span>
+												<span class="xyr">下一日<img src="../img/xyr.png" alt="" /></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>15:46:56</td>
+										<td>开启</td>
+										<td>15:46:56</td>
+										<td>关闭</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="kongzhi">
+							<div class="shijian">2017/06/23 09:42 星期三</div>
+							<div class="kongzhitou cl">
+								<span>煤气阀</span>
+								<img class="cur_p" src="../img/close.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

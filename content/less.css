@@ -1,0 +1,2302 @@
+html {
+  font-size: 20px;
+}
+body {
+  background-image: url(../img/1.jpg);
+  background-size: inherit;
+}
+.mask {
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: none;
+}
+.mask .message {
+  width: 40%;
+  height: 30%;
+  background: white;
+  top: 35%;
+  left: 30%;
+  position: absolute;
+  border-radius: 1rem;
+}
+.mask .message .information {
+  text-align: center;
+  display: block;
+  height: 10%;
+  position: relative;
+  top: 45%;
+  color: red;
+}
+.title {
+  height: 3.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  line-height: 3.5rem;
+}
+.title img {
+  position: absolute;
+  left: 1rem;
+  top: 0.75rem;
+  cursor: pointer;
+}
+.title span {
+  color: white;
+  font-size: 28px;
+}
+.saodijiqiren {
+  display: none !important;
+}
+.xinfengxitong {
+  display: none !important;
+}
+.dengdai {
+  display: none !important;
+}
+.zhuti {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 11rem;
+  width: 70rem;
+}
+.ditu {
+  display: none;
+}
+.ditu .left {
+  width: 68.5rem;
+  height: 32.5rem;
+  display: inline-block;
+  float: left;
+  position: relative;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 1rem;
+}
+.ditu .left .ditu_ .area {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.ditu .left .ditu_ .area img {
+  width: 110%;
+  margin-top: 0rem;
+  margin-left: -4rem;
+}
+.ditu .left .ditu_ .area .l_h {
+  position: absolute;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.ditu .left .ditu_ .area .jinru {
+  width: 5%;
+  height: 5%;
+  top: 40%;
+  left: 60%;
+}
+.ditu .left .ditu_ .div2 {
+  width: 7rem;
+  height: 6rem;
+  margin: 1rem;
+  display: inline-block;
+  text-align: left;
+}
+.ditu .left .ditu_ .div2 .div2_ {
+  background-image: url(../img/lou1.png);
+  height: 66px;
+  width: 66px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.ditu .left .ditu_ .div2 span {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+.quanbu .left {
+  width: 68.5rem;
+  height: 32.5rem;
+  display: inline-block;
+  float: left;
+  position: relative;
+  overflow-y: auto;
+  background: #ffffff;
+  opacity: 0.7;
+  border-radius: 1rem;
+}
+.quanbu .left .weizhi {
+  text-align: left;
+  height: 3rem;
+}
+.quanbu .left .weizhi .weizhi_name {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 3rem;
+  margin-left: 2rem;
+}
+.quanbu .left .weizhi select {
+  height: 1.2rem;
+  width: 6rem;
+  margin-left: 2rem;
+  position: relative;
+  top: -0.2rem;
+}
+.quanbu .left .weizhi img {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  display: none;
+  margin-right: 5rem;
+  margin-top: 1rem;
+  float: right;
+}
+.quanbu .left .louhao .area {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.quanbu .left .louhao .area img {
+  width: 100%;
+}
+.quanbu .left .louhao .area .l_h {
+  position: absolute;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.quanbu .left .louhao .area .guibinlou1 {
+  width: 10%;
+  height: 8%;
+  top: 42%;
+  left: 19%;
+  transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -webkit-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+}
+.quanbu .left .louhao .div2 {
+  width: 7rem;
+  height: 6rem;
+  margin: 1rem;
+  display: inline-block;
+  text-align: left;
+}
+.quanbu .left .louhao .div2 .div2_ {
+  background-image: url(../img/lou1.png);
+  height: 66px;
+  width: 66px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.quanbu .left .louhao .div2 span {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+.moulou {
+  display: none;
+}
+.moulou .left {
+  width: 68.5rem;
+  height: 32.5rem;
+  display: inline-block;
+  float: left;
+  position: relative;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.7);
+  background-image: url(../img/bjt.png);
+  background-position-x: center;
+  border-radius: 1rem;
+}
+.moulou .left .weizhi {
+  text-align: left;
+  height: 3rem;
+  cursor: pointer;
+}
+.moulou .left .weizhi .weizhi_name {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 3rem;
+  margin-left: 2rem;
+}
+.moulou .left .weizhi .sousuoinput {
+  width: 200px;
+  height: 28px;
+  position: absolute;
+  right: 7rem;
+  top: 1rem;
+  background: rgba(255, 255, 255, 0.3);
+}
+.moulou .left .weizhi img {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-right: 5rem;
+  margin-top: 1rem;
+  float: right;
+}
+.moulou .left .menhao {
+  display: none;
+}
+.moulou .left .menhao .div2 {
+  width: 7rem;
+  height: 6rem;
+  margin: 1rem;
+  display: inline-block;
+  text-align: left;
+  border-bottom: 1px solid #666;
+}
+.moulou .left .menhao .div2 .div2_ {
+  background-image: url(../img/men1.png);
+  height: 66px;
+  width: 66px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.moulou .left .menhao .div2 span {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+.zhuye {
+  display: none;
+}
+.zhuye .left {
+  width: 47rem;
+  height: 32.5rem;
+  display: inline-block;
+  float: left;
+  position: relative;
+  overflow-y: auto;
+}
+.zhuye .left .div1 {
+  width: 13rem;
+  height: 10rem;
+  background: #ffffff;
+  display: inline-block;
+  margin-right: 1.7rem;
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  cursor: context-menu;
+  opacity: 0.7;
+  float: left;
+}
+.zhuye .left .div1 .more {
+  position: relative;
+  left: 10.5rem;
+  width: 2rem;
+  cursor: pointer;
+}
+.zhuye .left .div1 img {
+  margin: 0 auto;
+  padding-top: 0.6rem;
+  top: 1rem;
+  left: 5.5rem;
+}
+.zhuye .left .div1 .name {
+  text-align: left;
+  padding-left: 1rem;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 3rem;
+}
+.zhuye .left .div1 span {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  color: #666666;
+}
+.zhuye .left .div1 .biaozhi {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  left: 5.5rem;
+  top: 2rem;
+}
+.zhuye .left .kongtiao .biaozhi {
+  background-image: url(../img/kt2.png);
+}
+.zhuye .left .kongtiao .biaozhi.on {
+  background-image: url(../img/kt1.png);
+}
+.zhuye .left .dianshiji .biaozhi {
+  background-image: url(../img/ds2.png);
+}
+.zhuye .left .dianshiji .biaozhi.on {
+  background-image: url(../img/ds1.png);
+}
+.zhuye .left .datingdeng .biaozhi,
+.zhuye .left .woshideng .biaozhi,
+.zhuye .left .chufangdeng .biaozhi,
+.zhuye .left .deng4 .biaozhi,
+.zhuye .left .deng5 .biaozhi,
+.zhuye .left .deng6 .biaozhi {
+  background-image: url(../img/de2.png);
+}
+.zhuye .left .datingdeng .biaozhi.on,
+.zhuye .left .woshideng .biaozhi.on,
+.zhuye .left .chufangdeng .biaozhi.on,
+.zhuye .left .deng4 .biaozhi.on,
+.zhuye .left .deng5 .biaozhi.on,
+.zhuye .left .deng6 .biaozhi.on {
+  background-image: url(../img/de1.png);
+}
+.zhuye .left .mensuo .biaozhi {
+  background-image: url(../img/ms2.png);
+}
+.zhuye .left .mensuo .biaozhi.on {
+  background-image: url(../img/ms1.png);
+}
+.zhuye .left .kongqijinghuaqi .biaozhi {
+  background-image: url(../img/xf2.png);
+}
+.zhuye .left .kongqijinghuaqi .biaozhi.on {
+  background-image: url(../img/xf1.png);
+}
+.zhuye .left .yushilian .biaozhi {
+  background-image: url(../img/cl2.png);
+}
+.zhuye .left .yushilian .biaozhi.on {
+  background-image: url(../img/cl1.png);
+}
+.zhuye .left .meiqifa .biaozhi {
+  background-image: url(../img/mq2.png);
+}
+.zhuye .left .meiqifa .biaozhi.on {
+  background-image: url(../img/mq1.png);
+}
+.zhuye .left .dengdai .biaozhi {
+  background-image: url(../img/dd2.png);
+}
+.zhuye .left .dengdai .biaozhi.on {
+  background-image: url(../img/dd1.png);
+}
+.zhuye .left .saodijiqiren .biaozhi {
+  background-image: url(../img/sd2.png);
+}
+.zhuye .left .saodijiqiren .biaozhi.on {
+  background-image: url(../img/sd1.png);
+}
+.zhuye .right {
+  width: 20rem;
+  height: 32.5rem;
+  margin-left: 2.5rem;
+  margin-top: 0rem;
+  float: right;
+  position: relative;
+}
+.zhuye .right .shinei {
+  width: 20rem;
+  height: 14rem;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+}
+.zhuye .right .shinei .shijian {
+  position: absolute;
+  top: -2rem;
+  color: white;
+  right: 0;
+}
+.zhuye .right .shinei .shinei1 .snwd {
+  height: 2.2rem;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  margin-top: 1rem;
+}
+.zhuye .right .shinei .shinei1 .snwd span {
+  color: #00b46b ;
+}
+.zhuye .right .shinei .shinei1 .sn {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+}
+.zhuye .right .shinei .shinei1 .more {
+  position: relative;
+  left: 17.5rem;
+  width: 2rem;
+  cursor: pointer;
+}
+.zhuye .right .shinei .shinei1 .shineitu {
+  width: 16rem;
+  margin: 0 auto;
+  height: 9rem;
+}
+.zhuye .right .shinei .shinei1 .shineitu .shineitu_zhu .baifenbi {
+  width: 2rem;
+  height: 8rem;
+  margin-right: 1.5rem;
+  float: left;
+  background: #94acc1;
+}
+.zhuye .right .shinei .shinei1 .shineitu .shineitu_zhu .baifenbi .baifenbi_ {
+  height: 10%;
+  background: white;
+  max-height: 99%;
+}
+.zhuye .right .shinei .shinei1 .shineitu .shineitu_ming .baifenbi {
+  width: 2rem;
+  height: 1rem;
+  margin-right: 1.5rem;
+  float: left;
+  font-size: 12px;
+}
+.zhuye .right .shinei .shinei1 .shineitu .shineitu_ming .baifenbi span {
+  position: relative;
+  bottom: 2rem;
+  display: block;
+  font-size: 15px;
+  margin: 0 auto;
+}
+.zhuye .right .shiwai {
+  width: 20rem;
+  height: 17rem;
+  background: white;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  position: relative;
+}
+.zhuye .right .shiwai .shiwai1 .swwd {
+  height: 2.2rem;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  margin-top: 1rem;
+}
+.zhuye .right .shiwai .shiwai1 .swwd span {
+  color: #00b46b ;
+}
+.zhuye .right .shiwai .shiwai1 .swtq img {
+  width: 60px;
+  position: relative;
+}
+.zhuye .right .shiwai .shiwai1 .sw {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+}
+.zhuye .right .shiwai .shiwai1 .more {
+  position: relative;
+  left: 17.5rem;
+  width: 2rem;
+  cursor: pointer;
+}
+.zhuye .right .shiwai .shiwai1 .shiwaitu {
+  width: 16rem;
+  margin: 0 auto;
+  height: 9rem;
+}
+.zhuye .right .shiwai .shiwai1 .shiwaitu .shiwaitu_zhu .baifenbi {
+  width: 2rem;
+  height: 8rem;
+  margin-right: 0.8rem;
+  float: left;
+  background: #94acc1;
+}
+.zhuye .right .shiwai .shiwai1 .shiwaitu .shiwaitu_zhu .baifenbi .baifenbi_ {
+  height: 10%;
+  background: white;
+}
+.zhuye .right .shiwai .shiwai1 .shiwaitu .shiwaitu_ming .baifenbi {
+  width: 2rem;
+  height: 1rem;
+  margin-right: 0.8rem;
+  float: left;
+  font-size: 12px;
+}
+.zhuye .right .shiwai .shiwai1 .shiwaitu .shiwaitu_ming .baifenbi span {
+  position: relative;
+  bottom: 2rem;
+  display: block;
+  font-size: 15px;
+  margin: 0 auto;
+}
+.dianshiji {
+  display: none;
+}
+.dianshiji .left {
+  width: 46rem;
+  height: 32.5rem;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+.dianshiji .left .jilu {
+  width: 46rem;
+  height: 19rem;
+  vertical-align: middle;
+  position: absolute;
+  margin: auto;
+  bottom: 0px;
+  top: 0;
+  background: white;
+  border-radius: 1rem;
+}
+.dianshiji .left .jilu .jl {
+  color: #00b46b;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.dianshiji .left .jilu .tb {
+  max-height: 12.4rem;
+  overflow-y: auto;
+}
+.dianshiji .left .jilu table,
+.dianshiji .left .jilu table tr th,
+.dianshiji .left .jilu table tr td {
+  border: 1px solid #b7b7b7;
+}
+.dianshiji .left .jilu table .syr,
+.dianshiji .left .jilu table tr th .syr,
+.dianshiji .left .jilu table tr td .syr {
+  cursor: pointer;
+}
+.dianshiji .left .jilu table .syr img,
+.dianshiji .left .jilu table tr th .syr img,
+.dianshiji .left .jilu table tr td .syr img {
+  position: relative;
+  top: 0.2rem;
+  margin-right: 1rem;
+}
+.dianshiji .left .jilu table .r,
+.dianshiji .left .jilu table tr th .r,
+.dianshiji .left .jilu table tr td .r {
+  display: inline-block;
+  width: 12rem;
+}
+.dianshiji .left .jilu table .xyr,
+.dianshiji .left .jilu table tr th .xyr,
+.dianshiji .left .jilu table tr td .xyr {
+  cursor: pointer;
+}
+.dianshiji .left .jilu table .xyr img,
+.dianshiji .left .jilu table tr th .xyr img,
+.dianshiji .left .jilu table tr td .xyr img {
+  position: relative;
+  top: 0.2rem;
+  margin-left: 1rem;
+}
+.dianshiji .left .jilu table {
+  width: 200px;
+  min-height: 2rem;
+  line-height: 2rem;
+  width: 42rem;
+  margin-left: 2rem;
+  text-align: center;
+  border-collapse: collapse;
+  padding: 2px;
+}
+.dianshiji .right {
+  width: 20rem;
+  height: 32.5rem;
+  margin-left: 2.5rem;
+  margin-top: 0rem;
+  float: right;
+  position: relative;
+}
+.dianshiji .right .kongzhi {
+  width: 20rem;
+  height: 19rem;
+  vertical-align: middle;
+  position: absolute;
+  margin: auto;
+  bottom: 0px;
+  top: 0;
+  background: white;
+  border-radius: 1rem;
+}
+.dianshiji .right .kongzhi .shijian {
+  position: absolute;
+  top: -2rem;
+  color: white;
+  right: 0;
+}
+.dianshiji .right .kongzhi .kongzhitou {
+  font-size: 20px;
+  margin-top: 1rem;
+}
+.dianshiji .right .kongzhi .kongzhitou span {
+  float: left;
+  margin-left: 1rem;
+}
+.dianshiji .right .kongzhi .kongzhitou img {
+  float: right;
+  margin-right: 1rem;
+}
+.dianshiji .right .kongzhi .pindao {
+  visibility: hidden;
+  font-size: 30px;
+  color: #00b46b;
+  margin-top: 0.5rem;
+}
+.dianshiji .right .kongzhi .kongzhipindao {
+  background-image: url(../img/kongzhipindao.png);
+  width: 8.5rem;
+  height: 8.5rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.dianshiji .right .kongzhi .kongzhipindao table {
+  width: 8.5rem;
+  height: 8.5rem;
+  font-size: 16px;
+}
+.dianshiji .right .kongzhi .kongzhiyinliang {
+  background-image: url(../img/kongzhiyinliang.png);
+  width: 4.45rem;
+  height: 1.95rem;
+  margin: 0px auto;
+  margin-top: -2rem;
+}
+.dianshiji .right .kongzhi .kongzhiyinliang table {
+  width: 4.45rem;
+  height: 1.95rem;
+  font-size: 16px;
+}
+.dianshiji .right .kongzhi .xuanzepindao {
+  visibility: hidden;
+}
+.dianshiji .right .kongzhi .xuanzepindao select {
+  width: 8rem;
+  height: 1.8rem;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+}
+.kongqijinghuaqi {
+  display: none;
+}
+.kongqijinghuaqi .left {
+  width: 46rem;
+  height: 32.5rem;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+.kongqijinghuaqi .left .jilu {
+  width: 46rem;
+  height: 19rem;
+  vertical-align: middle;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  background: white;
+  border-radius: 1rem;
+}
+.kongqijinghuaqi .left .jilu .jl {
+  color: #00b46b;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.kongqijinghuaqi .left .jilu .tb {
+  max-height: 12.4rem;
+  overflow-y: auto;
+}
+.kongqijinghuaqi .left .jilu table,
+.kongqijinghuaqi .left .jilu table tr th,
+.kongqijinghuaqi .left .jilu table tr td {
+  border: 1px solid #b7b7b7;
+}
+.kongqijinghuaqi .left .jilu table .syr,
+.kongqijinghuaqi .left .jilu table tr th .syr,
+.kongqijinghuaqi .left .jilu table tr td .syr {
+  cursor: pointer;
+}
+.kongqijinghuaqi .left .jilu table .syr img,
+.kongqijinghuaqi .left .jilu table tr th .syr img,
+.kongqijinghuaqi .left .jilu table tr td .syr img {
+  position: relative;
+  top: 0.2rem;
+  margin-right: 1rem;
+}
+.kongqijinghuaqi .left .jilu table .r,
+.kongqijinghuaqi .left .jilu table tr th .r,
+.kongqijinghuaqi .left .jilu table tr td .r {
+  display: inline-block;
+  width: 12rem;
+}
+.kongqijinghuaqi .left .jilu table .xyr,
+.kongqijinghuaqi .left .jilu table tr th .xyr,
+.kongqijinghuaqi .left .jilu table tr td .xyr {
+  cursor: pointer;
+}
+.kongqijinghuaqi .left .jilu table .xyr img,
+.kongqijinghuaqi .left .jilu table tr th .xyr img,
+.kongqijinghuaqi .left .jilu table tr td .xyr img {
+  position: relative;
+  top: 0.2rem;
+  margin-left: 1rem;
+}
+.kongqijinghuaqi .left .jilu table {
+  width: 200px;
+  min-height: 2rem;
+  line-height: 2rem;
+  width: 42rem;
+  margin-left: 2rem;
+  text-align: center;
+  border-collapse: collapse;
+  padding: 2px;
+}
+.kongqijinghuaqi .right {
+  width: 20rem;
+  height: 32.5rem;
+  margin-left: 2.5rem;
+  margin-top: 0rem;
+  float: right;
+  position: relative;
+}
+.kongqijinghuaqi .right .kongzhi {
+  width: 20rem;
+  height: 37rem;
+  height: 19rem;
+  background: white;
+  border-radius: 1rem;
+  position: relative;
+}
+.kongqijinghuaqi .right .kongzhi .shijian {
+  position: absolute;
+  top: -2rem;
+  color: white;
+  right: 0;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhitou {
+  font-size: 20px;
+  padding-top: 1rem;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhitou span {
+  float: left;
+  margin-left: 1rem;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhitou img {
+  float: right;
+  margin-right: 1rem;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhi1 .snwd {
+  height: 2.2rem;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhi1 .snwd span {
+  color: #00b46b ;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhi1 .shineitu {
+  width: 16rem;
+  margin: 0 auto;
+  height: 9rem;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhi1 .shineitu .shineitu_zhu .baifenbi {
+  width: 2.5rem;
+  height: 8rem;
+  margin-right: 2rem;
+  float: left;
+  background: #94acc1;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhi1 .shineitu .shineitu_zhu .baifenbi .baifenbi_ {
+  height: 10%;
+  background: white;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhi1 .shineitu .shineitu_ming .baifenbi {
+  width: 2.5rem;
+  height: 1rem;
+  margin-right: 2rem;
+  float: left;
+  font-size: 12px;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhi1 .shineitu .shineitu_ming .baifenbi span {
+  position: relative;
+  bottom: 2rem;
+  display: table;
+  font-size: 15px;
+  margin: 0 auto;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhifangxiang {
+  background-image: url(../img/kongzhipindao.png);
+  width: 8.5rem;
+  height: 8.5rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  display: none;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhifangxiang table {
+  width: 8.5rem;
+  height: 8.5rem;
+  font-size: 16px;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhifangxiang table .you img {
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -moz-transform: rotate(90deg);
+  /* Firefox */
+  -webkit-transform: rotate(90deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(90deg);
+  /* Opera */
+}
+.kongqijinghuaqi .right .kongzhi .kongzhifangxiang table .zuo img {
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -moz-transform: rotate(-90deg);
+  /* Firefox */
+  -webkit-transform: rotate(-90deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(-90deg);
+  /* Opera */
+}
+.kongqijinghuaqi .right .kongzhi .kongzhifangxiang table .xia img {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -moz-transform: rotate(180deg);
+  /* Firefox */
+  -webkit-transform: rotate(180deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(180deg);
+  /* Opera */
+}
+.kongqijinghuaqi .right .kongzhi .kongzhifengli {
+  border-top: 1px solid #666666;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhifengli .fenglixinxi {
+  margin-bottom: 1rem;
+  height: 1rem;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhifengli .fenglixinxi .fengli {
+  float: left;
+  margin-left: 1rem;
+  font-size: 18px;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhifengli .fenglixinxi .shuxing {
+  float: right;
+  margin-right: 1rem;
+  font-size: 16px;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhifengli .qiangdu {
+  display: none;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhifengli .qiangdu table {
+  width: 20rem;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhifengli .qiangdu table img {
+  border-radius: 50%;
+  cursor: pointer;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhifengli .qiangdu table .on {
+  -webkit-box-shadow: 3px 3px 3px;
+  -moz-box-shadow: 3px 3px 3px;
+  box-shadow: 0px 0px 10px 3px #00b46b;
+  border-radius: 50%;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhifengli .jinghua {
+  display: none;
+}
+.kongqijinghuaqi .right .kongzhi .kongzhifengli .jinghua input {
+  height: 2.5rem;
+  width: 18rem;
+  margin-top: 1rem;
+  background: #00b46b;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+.kongtiao {
+  display: none;
+}
+.kongtiao .left {
+  width: 46rem;
+  height: 32.5rem;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+.kongtiao .left .jilu_ {
+  width: 46rem;
+  height: 18rem;
+  vertical-align: middle;
+  position: absolute;
+  margin: auto;
+  /* bottom: 0px; */
+  top: 0;
+  background: white;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.kongtiao .left .jilu_ .jl {
+  color: #00b46b;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 2rem;
+  position: relative;
+}
+.kongtiao .left .jilu_ .jl div {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  position: absolute;
+  background: #B7B7B7;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  line-height: 2rem;
+}
+.kongtiao .left .jilu_ .jl .ri {
+  top: 0;
+}
+.kongtiao .left .jilu_ .jl .zhou {
+  top: 2.5rem;
+}
+.kongtiao .left .jilu_ .jl .yue {
+  top: 5rem;
+}
+.kongtiao .left .jilu_ .jl .on {
+  background: #00b46b;
+}
+.kongtiao .left .jilu_ .tu {
+  width: 42rem;
+  height: 12rem;
+  margin-left: 2rem;
+  border-left: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+.kongtiao .left .jilu_ .tu .dianliangtu_zhu .baifenbi {
+  width: 2rem;
+  height: 12rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  float: left;
+  background: #94acc1;
+}
+.kongtiao .left .jilu_ .tu .dianliangtu_zhu .baifenbi .baifenbi_ {
+  height: 20%;
+  background: white;
+  position: relative;
+}
+.kongtiao .left .jilu_ .tu .dianliangtu_zhu .baifenbi .baifenbi_ span {
+  position: absolute;
+  width: 2rem;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  font-size: 16px;
+}
+.kongtiao .left .jilu_ .tu .dianliangtu_riqi .baifenbi {
+  width: 4rem;
+  height: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  float: left;
+}
+.kongtiao .left .jilu_ .tu .dianliangtu_riqi .baifenbi span {
+  width: 4rem;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  font-size: 14px;
+}
+.kongtiao .left .jilu {
+  width: 46rem;
+  height: 18rem;
+  vertical-align: middle;
+  position: absolute;
+  margin: auto;
+  bottom: -5rem;
+  /* top: 0; */
+  background: white;
+  border-radius: 1rem;
+}
+.kongtiao .left .jilu .jl {
+  color: #00b46b;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.kongtiao .left .jilu .jl .sjjl {
+  float: right;
+  display: none;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.kongtiao .left .jilu .tb {
+  max-height: 12.4rem;
+  overflow-y: auto;
+}
+.kongtiao .left .jilu table,
+.kongtiao .left .jilu table tr th,
+.kongtiao .left .jilu table tr td {
+  border: 1px solid #b7b7b7;
+}
+.kongtiao .left .jilu table .syr,
+.kongtiao .left .jilu table tr th .syr,
+.kongtiao .left .jilu table tr td .syr {
+  cursor: pointer;
+}
+.kongtiao .left .jilu table .syr img,
+.kongtiao .left .jilu table tr th .syr img,
+.kongtiao .left .jilu table tr td .syr img {
+  position: relative;
+  top: 0.2rem;
+  margin-right: 1rem;
+}
+.kongtiao .left .jilu table .r,
+.kongtiao .left .jilu table tr th .r,
+.kongtiao .left .jilu table tr td .r {
+  display: inline-block;
+  width: 12rem;
+}
+.kongtiao .left .jilu table .xyr,
+.kongtiao .left .jilu table tr th .xyr,
+.kongtiao .left .jilu table tr td .xyr {
+  cursor: pointer;
+}
+.kongtiao .left .jilu table .xyr img,
+.kongtiao .left .jilu table tr th .xyr img,
+.kongtiao .left .jilu table tr td .xyr img {
+  position: relative;
+  top: 0.2rem;
+  margin-left: 1rem;
+}
+.kongtiao .left .jilu table {
+  width: 200px;
+  min-height: 2rem;
+  line-height: 2rem;
+  width: 42rem;
+  margin-left: 2rem;
+  text-align: center;
+  border-collapse: collapse;
+  padding: 2px;
+}
+.kongtiao .right {
+  width: 20rem;
+  height: 32.5rem;
+  margin-left: 2.5rem;
+  margin-top: 0rem;
+  float: right;
+  position: relative;
+}
+.kongtiao .right .kongzhi {
+  width: 20rem;
+  height: 18rem;
+  vertical-align: middle;
+  position: absolute;
+  margin: auto;
+  /* bottom: 0px; */
+  top: 0;
+  background: white;
+  border-radius: 1rem;
+}
+.kongtiao .right .kongzhi .shijian {
+  position: absolute;
+  top: -2rem;
+  color: white;
+  right: 0;
+}
+.kongtiao .right .kongzhi .kongzhitou {
+  font-size: 20px;
+  margin-top: 1rem;
+}
+.kongtiao .right .kongzhi .kongzhitou span {
+  float: left;
+  margin-left: 1rem;
+}
+.kongtiao .right .kongzhi .kongzhitou img {
+  float: right;
+  margin-right: 1rem;
+}
+.kongtiao .right .kongzhi .pindao {
+  font-size: 30px;
+  color: #00b46b;
+  margin-top: 0.5rem;
+}
+.kongtiao .right .kongzhi .snwd {
+  height: 2.2rem;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  margin-top: 1rem;
+  color: #00b46b;
+}
+.kongtiao .right .kongzhi .snwd span {
+  color: #00b46b;
+}
+.kongtiao .right .kongzhi .kongzhiwendu {
+  background-image: url(../img/kongzhiwendu.png);
+  width: 6.35rem;
+  height: 6.35rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.kongtiao .right .kongzhi .kongzhiwendu table {
+  width: 6.35rem;
+  height: 6.35rem;
+}
+.kongtiao .right .kongzhi .kongzhiwendu table .shang {
+  cursor: pointer;
+}
+.kongtiao .right .kongzhi .kongzhiwendu table .xia {
+  cursor: pointer;
+}
+.kongtiao .right .kongzhi .kongzhiwendu table .xia img {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -moz-transform: rotate(180deg);
+  /* Firefox */
+  -webkit-transform: rotate(180deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(180deg);
+  /* Opera */
+}
+.kongtiao .right .kongzhi .shishigonglv {
+  display: none;
+  margin-top: 1rem;
+}
+.mensuo {
+  display: none;
+}
+.mensuo .left {
+  width: 46rem;
+  height: 32.5rem;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+.mensuo .left .jilu {
+  width: 46rem;
+  height: 19rem;
+  vertical-align: middle;
+  position: absolute;
+  margin: auto;
+  bottom: 0px;
+  top: 0;
+  background: white;
+  border-radius: 1rem;
+}
+.mensuo .left .jilu .jl {
+  color: #00b46b;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.mensuo .left .jilu .tb {
+  max-height: 12.4rem;
+  overflow-y: auto;
+}
+.mensuo .left .jilu table,
+.mensuo .left .jilu table tr th,
+.mensuo .left .jilu table tr td {
+  border: 1px solid #b7b7b7;
+}
+.mensuo .left .jilu table .syr,
+.mensuo .left .jilu table tr th .syr,
+.mensuo .left .jilu table tr td .syr {
+  cursor: pointer;
+}
+.mensuo .left .jilu table .syr img,
+.mensuo .left .jilu table tr th .syr img,
+.mensuo .left .jilu table tr td .syr img {
+  position: relative;
+  top: 0.2rem;
+  margin-right: 1rem;
+}
+.mensuo .left .jilu table .r,
+.mensuo .left .jilu table tr th .r,
+.mensuo .left .jilu table tr td .r {
+  display: inline-block;
+  width: 12rem;
+}
+.mensuo .left .jilu table .xyr,
+.mensuo .left .jilu table tr th .xyr,
+.mensuo .left .jilu table tr td .xyr {
+  cursor: pointer;
+}
+.mensuo .left .jilu table .xyr img,
+.mensuo .left .jilu table tr th .xyr img,
+.mensuo .left .jilu table tr td .xyr img {
+  position: relative;
+  top: 0.2rem;
+  margin-left: 1rem;
+}
+.mensuo .left .jilu table {
+  width: 200px;
+  min-height: 2rem;
+  line-height: 2rem;
+  width: 42rem;
+  margin-left: 2rem;
+  text-align: center;
+  border-collapse: collapse;
+  padding: 2px;
+}
+.mensuo .right {
+  width: 20rem;
+  height: 32.5rem;
+  margin-left: 2.5rem;
+  margin-top: 0rem;
+  float: right;
+  position: relative;
+}
+.mensuo .right .kongzhi {
+  width: 20rem;
+  height: 3rem;
+  vertical-align: middle;
+  position: absolute;
+  /* margin: auto; */
+  /* bottom: 0px; */
+  top: 6.75rem;
+  background: white;
+  border-radius: 1rem;
+}
+.mensuo .right .kongzhi .shijian {
+  position: absolute;
+  top: -2rem;
+  color: white;
+  right: 0;
+}
+.mensuo .right .kongzhi .kongzhitou {
+  font-size: 20px;
+  margin-top: 1rem;
+}
+.mensuo .right .kongzhi .kongzhitou span {
+  float: left;
+  margin-left: 1rem;
+}
+.mensuo .right .kongzhi .kongzhitou img {
+  float: right;
+  margin-right: 1rem;
+}
+.datingdeng,
+.woshideng,
+.chufangdeng,
+.deng4,
+.deng5,
+.deng6 {
+  display: none;
+}
+.datingdeng .left,
+.woshideng .left,
+.chufangdeng .left,
+.deng4 .left,
+.deng5 .left,
+.deng6 .left {
+  width: 46rem;
+  height: 32.5rem;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+.datingdeng .left .jilu,
+.woshideng .left .jilu,
+.chufangdeng .left .jilu,
+.deng4 .left .jilu,
+.deng5 .left .jilu,
+.deng6 .left .jilu {
+  width: 46rem;
+  height: 19rem;
+  vertical-align: middle;
+  position: absolute;
+  margin: auto;
+  bottom: 0px;
+  top: 0;
+  background: white;
+  border-radius: 1rem;
+}
+.datingdeng .left .jilu .jl,
+.woshideng .left .jilu .jl,
+.chufangdeng .left .jilu .jl,
+.deng4 .left .jilu .jl,
+.deng5 .left .jilu .jl,
+.deng6 .left .jilu .jl {
+  color: #00b46b;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.datingdeng .left .jilu .tb,
+.woshideng .left .jilu .tb,
+.chufangdeng .left .jilu .tb,
+.deng4 .left .jilu .tb,
+.deng5 .left .jilu .tb,
+.deng6 .left .jilu .tb {
+  max-height: 12.4rem;
+  overflow-y: auto;
+}
+.datingdeng .left .jilu table,
+.woshideng .left .jilu table,
+.chufangdeng .left .jilu table,
+.deng4 .left .jilu table,
+.deng5 .left .jilu table,
+.deng6 .left .jilu table,
+.datingdeng .left .jilu table tr th,
+.woshideng .left .jilu table tr th,
+.chufangdeng .left .jilu table tr th,
+.deng4 .left .jilu table tr th,
+.deng5 .left .jilu table tr th,
+.deng6 .left .jilu table tr th,
+.datingdeng .left .jilu table tr td,
+.woshideng .left .jilu table tr td,
+.chufangdeng .left .jilu table tr td,
+.deng4 .left .jilu table tr td,
+.deng5 .left .jilu table tr td,
+.deng6 .left .jilu table tr td {
+  border: 1px solid #b7b7b7;
+}
+.datingdeng .left .jilu table .syr,
+.woshideng .left .jilu table .syr,
+.chufangdeng .left .jilu table .syr,
+.deng4 .left .jilu table .syr,
+.deng5 .left .jilu table .syr,
+.deng6 .left .jilu table .syr,
+.datingdeng .left .jilu table tr th .syr,
+.woshideng .left .jilu table tr th .syr,
+.chufangdeng .left .jilu table tr th .syr,
+.deng4 .left .jilu table tr th .syr,
+.deng5 .left .jilu table tr th .syr,
+.deng6 .left .jilu table tr th .syr,
+.datingdeng .left .jilu table tr td .syr,
+.woshideng .left .jilu table tr td .syr,
+.chufangdeng .left .jilu table tr td .syr,
+.deng4 .left .jilu table tr td .syr,
+.deng5 .left .jilu table tr td .syr,
+.deng6 .left .jilu table tr td .syr {
+  cursor: pointer;
+}
+.datingdeng .left .jilu table .syr img,
+.woshideng .left .jilu table .syr img,
+.chufangdeng .left .jilu table .syr img,
+.deng4 .left .jilu table .syr img,
+.deng5 .left .jilu table .syr img,
+.deng6 .left .jilu table .syr img,
+.datingdeng .left .jilu table tr th .syr img,
+.woshideng .left .jilu table tr th .syr img,
+.chufangdeng .left .jilu table tr th .syr img,
+.deng4 .left .jilu table tr th .syr img,
+.deng5 .left .jilu table tr th .syr img,
+.deng6 .left .jilu table tr th .syr img,
+.datingdeng .left .jilu table tr td .syr img,
+.woshideng .left .jilu table tr td .syr img,
+.chufangdeng .left .jilu table tr td .syr img,
+.deng4 .left .jilu table tr td .syr img,
+.deng5 .left .jilu table tr td .syr img,
+.deng6 .left .jilu table tr td .syr img {
+  position: relative;
+  top: 0.2rem;
+  margin-right: 1rem;
+}
+.datingdeng .left .jilu table .r,
+.woshideng .left .jilu table .r,
+.chufangdeng .left .jilu table .r,
+.deng4 .left .jilu table .r,
+.deng5 .left .jilu table .r,
+.deng6 .left .jilu table .r,
+.datingdeng .left .jilu table tr th .r,
+.woshideng .left .jilu table tr th .r,
+.chufangdeng .left .jilu table tr th .r,
+.deng4 .left .jilu table tr th .r,
+.deng5 .left .jilu table tr th .r,
+.deng6 .left .jilu table tr th .r,
+.datingdeng .left .jilu table tr td .r,
+.woshideng .left .jilu table tr td .r,
+.chufangdeng .left .jilu table tr td .r,
+.deng4 .left .jilu table tr td .r,
+.deng5 .left .jilu table tr td .r,
+.deng6 .left .jilu table tr td .r {
+  display: inline-block;
+  width: 12rem;
+}
+.datingdeng .left .jilu table .xyr,
+.woshideng .left .jilu table .xyr,
+.chufangdeng .left .jilu table .xyr,
+.deng4 .left .jilu table .xyr,
+.deng5 .left .jilu table .xyr,
+.deng6 .left .jilu table .xyr,
+.datingdeng .left .jilu table tr th .xyr,
+.woshideng .left .jilu table tr th .xyr,
+.chufangdeng .left .jilu table tr th .xyr,
+.deng4 .left .jilu table tr th .xyr,
+.deng5 .left .jilu table tr th .xyr,
+.deng6 .left .jilu table tr th .xyr,
+.datingdeng .left .jilu table tr td .xyr,
+.woshideng .left .jilu table tr td .xyr,
+.chufangdeng .left .jilu table tr td .xyr,
+.deng4 .left .jilu table tr td .xyr,
+.deng5 .left .jilu table tr td .xyr,
+.deng6 .left .jilu table tr td .xyr {
+  cursor: pointer;
+}
+.datingdeng .left .jilu table .xyr img,
+.woshideng .left .jilu table .xyr img,
+.chufangdeng .left .jilu table .xyr img,
+.deng4 .left .jilu table .xyr img,
+.deng5 .left .jilu table .xyr img,
+.deng6 .left .jilu table .xyr img,
+.datingdeng .left .jilu table tr th .xyr img,
+.woshideng .left .jilu table tr th .xyr img,
+.chufangdeng .left .jilu table tr th .xyr img,
+.deng4 .left .jilu table tr th .xyr img,
+.deng5 .left .jilu table tr th .xyr img,
+.deng6 .left .jilu table tr th .xyr img,
+.datingdeng .left .jilu table tr td .xyr img,
+.woshideng .left .jilu table tr td .xyr img,
+.chufangdeng .left .jilu table tr td .xyr img,
+.deng4 .left .jilu table tr td .xyr img,
+.deng5 .left .jilu table tr td .xyr img,
+.deng6 .left .jilu table tr td .xyr img {
+  position: relative;
+  top: 0.2rem;
+  margin-left: 1rem;
+}
+.datingdeng .left .jilu table,
+.woshideng .left .jilu table,
+.chufangdeng .left .jilu table,
+.deng4 .left .jilu table,
+.deng5 .left .jilu table,
+.deng6 .left .jilu table {
+  width: 200px;
+  min-height: 2rem;
+  line-height: 2rem;
+  width: 42rem;
+  margin-left: 2rem;
+  text-align: center;
+  border-collapse: collapse;
+  padding: 2px;
+}
+.datingdeng .right,
+.woshideng .right,
+.chufangdeng .right,
+.deng4 .right,
+.deng5 .right,
+.deng6 .right {
+  width: 20rem;
+  height: 32.5rem;
+  margin-left: 2.5rem;
+  margin-top: 0rem;
+  float: right;
+  position: relative;
+}
+.datingdeng .right .kongzhi,
+.woshideng .right .kongzhi,
+.chufangdeng .right .kongzhi,
+.deng4 .right .kongzhi,
+.deng5 .right .kongzhi,
+.deng6 .right .kongzhi {
+  width: 20rem;
+  height: 3rem;
+  vertical-align: middle;
+  position: absolute;
+  /* margin: auto; */
+  /* bottom: 0px; */
+  top: 6.75rem;
+  background: white;
+  border-radius: 1rem;
+}
+.datingdeng .right .kongzhi .shijian,
+.woshideng .right .kongzhi .shijian,
+.chufangdeng .right .kongzhi .shijian,
+.deng4 .right .kongzhi .shijian,
+.deng5 .right .kongzhi .shijian,
+.deng6 .right .kongzhi .shijian {
+  position: absolute;
+  top: -2rem;
+  color: white;
+  right: 0;
+}
+.datingdeng .right .kongzhi .kongzhitou,
+.woshideng .right .kongzhi .kongzhitou,
+.chufangdeng .right .kongzhi .kongzhitou,
+.deng4 .right .kongzhi .kongzhitou,
+.deng5 .right .kongzhi .kongzhitou,
+.deng6 .right .kongzhi .kongzhitou {
+  font-size: 20px;
+  margin-top: 1rem;
+}
+.datingdeng .right .kongzhi .kongzhitou span,
+.woshideng .right .kongzhi .kongzhitou span,
+.chufangdeng .right .kongzhi .kongzhitou span,
+.deng4 .right .kongzhi .kongzhitou span,
+.deng5 .right .kongzhi .kongzhitou span,
+.deng6 .right .kongzhi .kongzhitou span {
+  float: left;
+  margin-left: 1rem;
+}
+.datingdeng .right .kongzhi .kongzhitou img,
+.woshideng .right .kongzhi .kongzhitou img,
+.chufangdeng .right .kongzhi .kongzhitou img,
+.deng4 .right .kongzhi .kongzhitou img,
+.deng5 .right .kongzhi .kongzhitou img,
+.deng6 .right .kongzhi .kongzhitou img {
+  float: right;
+  margin-right: 1rem;
+}
+.yushilian {
+  display: none;
+}
+.yushilian .left {
+  width: 46rem;
+  height: 32.5rem;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+.yushilian .left .jilu {
+  width: 46rem;
+  height: 19rem;
+  vertical-align: middle;
+  position: absolute;
+  margin: auto;
+  bottom: 0px;
+  top: 0;
+  background: white;
+  border-radius: 1rem;
+}
+.yushilian .left .jilu .jl {
+  color: #00b46b;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.yushilian .left .jilu .tb {
+  max-height: 12.4rem;
+  overflow-y: auto;
+}
+.yushilian .left .jilu table,
+.yushilian .left .jilu table tr th,
+.yushilian .left .jilu table tr td {
+  border: 1px solid #b7b7b7;
+}
+.yushilian .left .jilu table .syr,
+.yushilian .left .jilu table tr th .syr,
+.yushilian .left .jilu table tr td .syr {
+  cursor: pointer;
+}
+.yushilian .left .jilu table .syr img,
+.yushilian .left .jilu table tr th .syr img,
+.yushilian .left .jilu table tr td .syr img {
+  position: relative;
+  top: 0.2rem;
+  margin-right: 1rem;
+}
+.yushilian .left .jilu table .r,
+.yushilian .left .jilu table tr th .r,
+.yushilian .left .jilu table tr td .r {
+  display: inline-block;
+  width: 12rem;
+}
+.yushilian .left .jilu table .xyr,
+.yushilian .left .jilu table tr th .xyr,
+.yushilian .left .jilu table tr td .xyr {
+  cursor: pointer;
+}
+.yushilian .left .jilu table .xyr img,
+.yushilian .left .jilu table tr th .xyr img,
+.yushilian .left .jilu table tr td .xyr img {
+  position: relative;
+  top: 0.2rem;
+  margin-left: 1rem;
+}
+.yushilian .left .jilu table {
+  width: 200px;
+  min-height: 2rem;
+  line-height: 2rem;
+  width: 42rem;
+  margin-left: 2rem;
+  text-align: center;
+  border-collapse: collapse;
+  padding: 2px;
+}
+.yushilian .right {
+  width: 20rem;
+  height: 32.5rem;
+  margin-left: 2.5rem;
+  margin-top: 0rem;
+  float: right;
+  position: relative;
+}
+.yushilian .right .kongzhi {
+  width: 20rem;
+  height: 6rem;
+  vertical-align: middle;
+  position: absolute;
+  /* margin: auto; */
+  /* bottom: 0px; */
+  top: 6.75rem;
+  background: white;
+  border-radius: 1rem;
+}
+.yushilian .right .kongzhi .shijian {
+  position: absolute;
+  top: -2rem;
+  color: white;
+  right: 0;
+}
+.yushilian .right .kongzhi .kongzhitou {
+  font-size: 20px;
+  margin-top: 1rem;
+}
+.yushilian .right .kongzhi .kongzhitou span {
+  float: left;
+  margin-left: 1rem;
+}
+.yushilian .right .kongzhi .kongzhitou img {
+  float: right;
+  margin-right: 1rem;
+}
+.yushilian .right .kongzhi .jindutiao {
+  background: #979797;
+  height: 0.75rem;
+  margin: 1rem;
+  position: relative;
+}
+.yushilian .right .kongzhi .jindutiao .jindutiao_ {
+  height: 0.75rem;
+  background: #00b46b;
+  width: 0%;
+  max-width: 100%;
+  position: relative;
+}
+.yushilian .right .kongzhi .jindutiao .jindutiao_ .quan1 {
+  position: absolute;
+  top: -0.375rem;
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: #a2ed49;
+}
+.yushilian .right .kongzhi .jindutiao .jindutiao_ .quan1 .quan2 {
+  height: 1rem;
+  border-radius: 50%;
+  width: 1rem;
+  background: #fff;
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+}
+.dengdai {
+  display: none;
+}
+.dengdai .left {
+  width: 46rem;
+  height: 32.5rem;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+.dengdai .left .jilu {
+  width: 46rem;
+  height: 19rem;
+  vertical-align: middle;
+  position: absolute;
+  margin: auto;
+  bottom: 0px;
+  top: 0;
+  background: white;
+  border-radius: 1rem;
+}
+.dengdai .left .jilu .jl {
+  color: #00b46b;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.dengdai .left .jilu .tb {
+  max-height: 12.4rem;
+  overflow-y: auto;
+}
+.dengdai .left .jilu table,
+.dengdai .left .jilu table tr th,
+.dengdai .left .jilu table tr td {
+  border: 1px solid #b7b7b7;
+}
+.dengdai .left .jilu table .syr,
+.dengdai .left .jilu table tr th .syr,
+.dengdai .left .jilu table tr td .syr {
+  cursor: pointer;
+}
+.dengdai .left .jilu table .syr img,
+.dengdai .left .jilu table tr th .syr img,
+.dengdai .left .jilu table tr td .syr img {
+  position: relative;
+  top: 0.2rem;
+  margin-right: 1rem;
+}
+.dengdai .left .jilu table .r,
+.dengdai .left .jilu table tr th .r,
+.dengdai .left .jilu table tr td .r {
+  display: inline-block;
+  width: 12rem;
+}
+.dengdai .left .jilu table .xyr,
+.dengdai .left .jilu table tr th .xyr,
+.dengdai .left .jilu table tr td .xyr {
+  cursor: pointer;
+}
+.dengdai .left .jilu table .xyr img,
+.dengdai .left .jilu table tr th .xyr img,
+.dengdai .left .jilu table tr td .xyr img {
+  position: relative;
+  top: 0.2rem;
+  margin-left: 1rem;
+}
+.dengdai .left .jilu table {
+  width: 200px;
+  min-height: 2rem;
+  line-height: 2rem;
+  width: 42rem;
+  margin-left: 2rem;
+  text-align: center;
+  border-collapse: collapse;
+  padding: 2px;
+}
+.dengdai .right {
+  width: 20rem;
+  height: 32.5rem;
+  margin-left: 2.5rem;
+  margin-top: 0rem;
+  float: right;
+  position: relative;
+}
+.dengdai .right .kongzhi {
+  width: 20rem;
+  height: 3rem;
+  vertical-align: middle;
+  position: absolute;
+  /* margin: auto; */
+  /* bottom: 0px; */
+  top: 6.75rem;
+  background: white;
+  border-radius: 1rem;
+}
+.dengdai .right .kongzhi .shijian {
+  position: absolute;
+  top: -2rem;
+  color: white;
+  right: 0;
+}
+.dengdai .right .kongzhi .kongzhitou {
+  font-size: 20px;
+  margin-top: 1rem;
+}
+.dengdai .right .kongzhi .kongzhitou span {
+  float: left;
+  margin-left: 1rem;
+}
+.dengdai .right .kongzhi .kongzhitou img {
+  float: right;
+  margin-right: 1rem;
+}
+.meiqifa {
+  display: none;
+}
+.meiqifa .left {
+  width: 46rem;
+  height: 32.5rem;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+.meiqifa .left .jilu {
+  width: 46rem;
+  height: 19rem;
+  vertical-align: middle;
+  position: absolute;
+  margin: auto;
+  bottom: 0px;
+  top: 0;
+  background: white;
+  border-radius: 1rem;
+}
+.meiqifa .left .jilu .jl {
+  color: #00b46b;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.meiqifa .left .jilu .tb {
+  max-height: 12.4rem;
+  overflow-y: auto;
+}
+.meiqifa .left .jilu table,
+.meiqifa .left .jilu table tr th,
+.meiqifa .left .jilu table tr td {
+  border: 1px solid #b7b7b7;
+}
+.meiqifa .left .jilu table .syr,
+.meiqifa .left .jilu table tr th .syr,
+.meiqifa .left .jilu table tr td .syr {
+  cursor: pointer;
+}
+.meiqifa .left .jilu table .syr img,
+.meiqifa .left .jilu table tr th .syr img,
+.meiqifa .left .jilu table tr td .syr img {
+  position: relative;
+  top: 0.2rem;
+  margin-right: 1rem;
+}
+.meiqifa .left .jilu table .r,
+.meiqifa .left .jilu table tr th .r,
+.meiqifa .left .jilu table tr td .r {
+  display: inline-block;
+  width: 12rem;
+}
+.meiqifa .left .jilu table .xyr,
+.meiqifa .left .jilu table tr th .xyr,
+.meiqifa .left .jilu table tr td .xyr {
+  cursor: pointer;
+}
+.meiqifa .left .jilu table .xyr img,
+.meiqifa .left .jilu table tr th .xyr img,
+.meiqifa .left .jilu table tr td .xyr img {
+  position: relative;
+  top: 0.2rem;
+  margin-left: 1rem;
+}
+.meiqifa .left .jilu table {
+  width: 200px;
+  min-height: 2rem;
+  line-height: 2rem;
+  width: 42rem;
+  margin-left: 2rem;
+  text-align: center;
+  border-collapse: collapse;
+  padding: 2px;
+}
+.meiqifa .right {
+  width: 20rem;
+  height: 32.5rem;
+  margin-left: 2.5rem;
+  margin-top: 0rem;
+  float: right;
+  position: relative;
+}
+.meiqifa .right .kongzhi {
+  width: 20rem;
+  height: 3rem;
+  vertical-align: middle;
+  position: absolute;
+  /* margin: auto; */
+  /* bottom: 0px; */
+  top: 6.75rem;
+  background: white;
+  border-radius: 1rem;
+}
+.meiqifa .right .kongzhi .shijian {
+  position: absolute;
+  top: -2rem;
+  color: white;
+  right: 0;
+}
+.meiqifa .right .kongzhi .kongzhitou {
+  font-size: 20px;
+  margin-top: 1rem;
+}
+.meiqifa .right .kongzhi .kongzhitou span {
+  float: left;
+  margin-left: 1rem;
+}
+.meiqifa .right .kongzhi .kongzhitou img {
+  float: right;
+  margin-right: 1rem;
+}
+@media (max-width: 1400px) {
+  .zhuti {
+    width: 60rem;
+    margin-top: 9rem;
+  }
+  .quanbu .left {
+    width: 60rem;
+    height: 30rem;
+  }
+  .moulou .left {
+    width: 60rem;
+    height: 30rem;
+  }
+  .zhuye .left {
+    width: 41.5rem;
+    height: 31.5rem;
+  }
+  .zhuye .left .div1 {
+    margin-right: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+  .zhuye .right {
+    width: 18.5rem;
+    margin-left: 0;
+    float: left;
+  }
+  .zhuye .right .shinei {
+    width: 18.5rem;
+  }
+  .zhuye .right .shinei .shinei1 .more {
+    left: 16.5rem;
+  }
+  .zhuye .right .shiwai {
+    width: 18.5rem;
+    margin-top: 0.5rem;
+  }
+  .zhuye .right .shiwai .shiwai1 .more {
+    left: 16.5rem;
+  }
+  .dianshiji .left,
+  .kongtiao .left,
+  .datingdeng .left,
+  .woshideng .left,
+  .chufangdeng .left,
+  .deng4 .left,
+  .deng5 .left,
+  .deng6 .left,
+  .mensuo .left,
+  .kongqijinghuaqi .left,
+  .yushilian .left,
+  .meiqifa .left {
+    width: 41.5rem;
+  }
+  .dianshiji .left .jilu,
+  .kongtiao .left .jilu,
+  .datingdeng .left .jilu,
+  .woshideng .left .jilu,
+  .chufangdeng .left .jilu,
+  .deng4 .left .jilu,
+  .deng5 .left .jilu,
+  .deng6 .left .jilu,
+  .mensuo .left .jilu,
+  .kongqijinghuaqi .left .jilu,
+  .yushilian .left .jilu,
+  .meiqifa .left .jilu {
+    width: 41.5rem;
+  }
+  .dianshiji .left .jilu table,
+  .kongtiao .left .jilu table,
+  .datingdeng .left .jilu table,
+  .woshideng .left .jilu table,
+  .chufangdeng .left .jilu table,
+  .deng4 .left .jilu table,
+  .deng5 .left .jilu table,
+  .deng6 .left .jilu table,
+  .mensuo .left .jilu table,
+  .kongqijinghuaqi .left .jilu table,
+  .yushilian .left .jilu table,
+  .meiqifa .left .jilu table {
+    width: 39rem;
+  }
+  .dianshiji .left .jilu_,
+  .kongtiao .left .jilu_,
+  .datingdeng .left .jilu_,
+  .woshideng .left .jilu_,
+  .chufangdeng .left .jilu_,
+  .deng4 .left .jilu_,
+  .deng5 .left .jilu_,
+  .deng6 .left .jilu_,
+  .mensuo .left .jilu_,
+  .kongqijinghuaqi .left .jilu_,
+  .yushilian .left .jilu_,
+  .meiqifa .left .jilu_ {
+    width: 41.5rem;
+  }
+  .dianshiji .left .jilu_ table,
+  .kongtiao .left .jilu_ table,
+  .datingdeng .left .jilu_ table,
+  .woshideng .left .jilu_ table,
+  .chufangdeng .left .jilu_ table,
+  .deng4 .left .jilu_ table,
+  .deng5 .left .jilu_ table,
+  .deng6 .left .jilu_ table,
+  .mensuo .left .jilu_ table,
+  .kongqijinghuaqi .left .jilu_ table,
+  .yushilian .left .jilu_ table,
+  .meiqifa .left .jilu_ table {
+    width: 37rem;
+  }
+  .dianshiji .left .jilu_ .tu,
+  .kongtiao .left .jilu_ .tu,
+  .datingdeng .left .jilu_ .tu,
+  .woshideng .left .jilu_ .tu,
+  .chufangdeng .left .jilu_ .tu,
+  .deng4 .left .jilu_ .tu,
+  .deng5 .left .jilu_ .tu,
+  .deng6 .left .jilu_ .tu,
+  .mensuo .left .jilu_ .tu,
+  .kongqijinghuaqi .left .jilu_ .tu,
+  .yushilian .left .jilu_ .tu,
+  .meiqifa .left .jilu_ .tu {
+    width: 37rem;
+  }
+  .dianshiji .right,
+  .kongtiao .right,
+  .datingdeng .right,
+  .woshideng .right,
+  .chufangdeng .right,
+  .deng4 .right,
+  .deng5 .right,
+  .deng6 .right,
+  .mensuo .right,
+  .kongqijinghuaqi .right,
+  .yushilian .right,
+  .meiqifa .right {
+    width: 18.5rem;
+    margin-left: 0;
+  }
+  .dianshiji .right .kongzhi,
+  .kongtiao .right .kongzhi,
+  .datingdeng .right .kongzhi,
+  .woshideng .right .kongzhi,
+  .chufangdeng .right .kongzhi,
+  .deng4 .right .kongzhi,
+  .deng5 .right .kongzhi,
+  .deng6 .right .kongzhi,
+  .mensuo .right .kongzhi,
+  .kongqijinghuaqi .right .kongzhi,
+  .yushilian .right .kongzhi,
+  .meiqifa .right .kongzhi {
+    width: 17rem;
+    margin-left: 1.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  body {
+    background-image: url(../img/2.png);
+    background-size: cover;
+  }
+  .zhuti {
+    width: 43rem;
+  }
+  .quanbu .left {
+    width: 43rem;
+  }
+  .moulou .left {
+    width: 43rem;
+  }
+  .zhuye .left {
+    width: 45rem;
+    top: 19rem;
+  }
+  .zhuye .left .div1 {
+    margin-right: 2rem;
+    margin-bottom: 0.7rem;
+  }
+  .zhuye .right {
+    width: 43rem;
+    position: absolute;
+    height: 17rem;
+  }
+  .zhuye .right .shinei {
+    height: 17rem;
+    width: 20.5rem;
+  }
+  .zhuye .right .shinei .shinei1 .more {
+    left: 18rem;
+  }
+  .zhuye .right .shinei .shinei1 .snwd {
+    margin-bottom: 3.3rem;
+  }
+  .zhuye .right .shinei .shinei1 .shineitu .baifenbi_ {
+    width: 120%;
+    position: relative;
+    left: -6px;
+    top: -6px;
+  }
+  .zhuye .right .shinei .shijian {
+    right: -22.5rem;
+  }
+  .zhuye .right .shiwai {
+    position: absolute;
+    left: 22.5rem;
+    top: 0;
+    margin-top: 0;
+    width: 20.5rem;
+  }
+  .zhuye .right .shiwai .shiwai1 .more {
+    left: 18rem;
+  }
+  .zhuye .right .shiwai .shiwai1 .shiwaitu .baifenbi_ {
+    width: 120%;
+    position: relative;
+    left: -6px;
+    top: -6px;
+  }
+  .kongtiao .left {
+    width: 43rem;
+    top: 20rem;
+  }
+  .kongtiao .left .jilu {
+    width: 43rem;
+    top: 25rem;
+    bottom: 0;
+  }
+  .kongtiao .left .jilu_ {
+    width: 43rem;
+  }
+  .kongtiao .right {
+    position: absolute;
+    top: 7rem;
+    width: 43rem;
+    height: 0;
+  }
+  .kongtiao .right .kongzhi {
+    margin-left: 0;
+    right: 0;
+  }
+  .dianshiji .left {
+    width: 43rem;
+  }
+  .dianshiji .left .jilu {
+    width: 43rem;
+    top: 25rem;
+  }
+  .dianshiji .left .jilu_ {
+    width: 43rem;
+  }
+  .dianshiji .right {
+    position: absolute;
+    top: 0rem;
+    width: 43rem;
+    height: 0;
+  }
+  .dianshiji .right .kongzhi {
+    margin-left: 0;
+    right: 0;
+    position: relative;
+    float: right;
+    top: 7rem;
+  }
+  .kongqijinghuaqi .left {
+    width: 43rem;
+    top: -1rem;
+  }
+  .kongqijinghuaqi .left .jilu {
+    width: 43rem;
+    top: 25rem;
+  }
+  .kongqijinghuaqi .left .jilu_ {
+    width: 43rem;
+  }
+  .kongqijinghuaqi .right {
+    position: absolute;
+    top: 0rem;
+    width: 43rem;
+    height: 0;
+  }
+  .kongqijinghuaqi .right .kongzhi {
+    margin-left: 0;
+    right: 0;
+    float: right;
+    top: 7rem;
+    width: 20rem;
+  }
+  .yushilian .left {
+    width: 43rem;
+    height: 9rem;
+  }
+  .yushilian .left .jilu {
+    width: 43rem;
+    top: 25rem;
+  }
+  .yushilian .left .jilu_ {
+    width: 43rem;
+  }
+  .yushilian .right {
+    position: absolute;
+    top: 0rem;
+    width: 43rem;
+    height: 0;
+  }
+  .yushilian .right .kongzhi {
+    margin-left: 0;
+    right: 0;
+  }
+  .datingdeng .left,
+  .woshideng .left,
+  .chufangdeng .left,
+  .deng4 .left,
+  .deng5 .left,
+  .deng6 .left,
+  .mensuo .left,
+  .meiqifa .left {
+    width: 43rem;
+    height: 3rem;
+  }
+  .datingdeng .left .jilu,
+  .woshideng .left .jilu,
+  .chufangdeng .left .jilu,
+  .deng4 .left .jilu,
+  .deng5 .left .jilu,
+  .deng6 .left .jilu,
+  .mensuo .left .jilu,
+  .meiqifa .left .jilu {
+    width: 43rem;
+    top: 25rem;
+  }
+  .datingdeng .left .jilu_,
+  .woshideng .left .jilu_,
+  .chufangdeng .left .jilu_,
+  .deng4 .left .jilu_,
+  .deng5 .left .jilu_,
+  .deng6 .left .jilu_,
+  .mensuo .left .jilu_,
+  .meiqifa .left .jilu_ {
+    width: 43rem;
+  }
+  .datingdeng .right,
+  .woshideng .right,
+  .chufangdeng .right,
+  .deng4 .right,
+  .deng5 .right,
+  .deng6 .right,
+  .mensuo .right,
+  .meiqifa .right {
+    position: absolute;
+    top: 0rem;
+    width: 43rem;
+    height: 0;
+  }
+  .datingdeng .right .kongzhi,
+  .woshideng .right .kongzhi,
+  .chufangdeng .right .kongzhi,
+  .deng4 .right .kongzhi,
+  .deng5 .right .kongzhi,
+  .deng6 .right .kongzhi,
+  .mensuo .right .kongzhi,
+  .meiqifa .right .kongzhi {
+    margin-left: 0;
+    right: 0;
+  }
+}
